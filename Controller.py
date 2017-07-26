@@ -1,8 +1,4 @@
-import pyttsx3
-engine = pyttsx3.init()
+from components import Voice
 
-def Speak(text):
-    print(("Speaking: {}").format(text))
-    engine.say(text)
-    engine.runAndWait()
-    print("Speaking: Complete.")
+#Script initialization
+Voice.Speak("Mia Control script initiated.")
